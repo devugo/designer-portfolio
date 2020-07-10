@@ -1,6 +1,9 @@
 /* Start Navbar */
+.navbar-light .navbar-toggler-icon {
+    background-image: url('../../img/hamburger.png');
+}
 .navbar{
-    background: $light-blue;
+    background: $white;
     position: fixed;
     width: 100%;
     padding-left: 25px;
@@ -10,23 +13,24 @@
 
     .nav-item{
 
+        .nav-link {
+            @include transition-ease;
+        }
         .nav-link.active, .nav-link:hover{
-            position: relative;
+            color: $primary-color !important;
+        }
 
-            &::after{
-                position: absolute;
-                content: '';
-                left: 11px;
-                bottom: 5px;
-                height: 2px;
-                width: 40px;
-                background-color: $primary-color;
+        &:last-child {
+            .devugo-btn {
+                font-size: 14px;
+                padding-top: 10px;
+                padding-bottom: 10px;
             }
         }
 
     }
     li a.nav-link{
-        color: $primary-color !important;
+        color: $secondary-color !important;
     }
 }
 .signin {
@@ -65,6 +69,8 @@
     .navbar {
         height: 72px;
         background: $white;
+        padding-left: 9%;
+        padding-right: 9%;
 
         li {
             margin-right: 20px;
