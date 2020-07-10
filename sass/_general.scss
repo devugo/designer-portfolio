@@ -2,8 +2,11 @@
     background: $primary-color;
     color: $white;
     border-radius: 4px;
-    font-size: 18px;
     border: 1px solid $primary-color;
+    width: 130px;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     @include transition-ease;
 
     &:hover {

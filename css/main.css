@@ -23,8 +23,11 @@ body {
   background: #EA3F5A;
   color: #fff;
   border-radius: 4px;
-  font-size: 18px;
   border: 1px solid #EA3F5A;
+  width: 130px;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -306,5 +309,71 @@ body {
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0.02em;
+}
+
+.about-me .container .content .image-content {
+  z-index: 2;
+  margin-top: 40px;
+}
+
+.about-me .container .content .image-content .primary-bg {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 110.42px);
+  width: 120.85px;
+  height: 300.9px;
+}
+
+.about-me .container .content .image-content img {
+  position: absolute;
+  width: 202.12px;
+  height: 280.9px;
+  left: calc(50% - 100.42px);
+  top: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.about-me .container .content .image-content img:hover {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
+
+.about-me .container .content .text-content {
+  margin-top: 350px;
+  padding: 10px;
+}
+
+.about-me .container .content .text-content p {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+}
+
+.about-me .container .content .text-content p:first-child {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 992px) {
+  .about-me .container .content .image-content {
+    background-color: red;
+  }
+  .about-me .container .content .image-content .primary-bg {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 100.42px);
+    width: 150px;
+    height: 400px;
+  }
+  .about-me .container .content .image-content img {
+    position: absolute;
+    width: 250px;
+    height: 380px;
+    left: calc(50% - 90.42px);
+    top: 10px;
+  }
+  .about-me .container .content .text-content {
+    margin-top: 40px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
