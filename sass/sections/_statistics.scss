@@ -1,0 +1,29 @@
+.statistics {
+    color: $secondary-text-color;
+    padding: 100px 0 40px 0;
+
+    .container {
+        .content{
+            margin-bottom: 80px; 
+            p:first-child{
+                font-weight: bold;
+                font-size: 32px;
+                line-height: 35px;
+            }
+            p:last-child{
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+@include media-md-bootstrap {
+    .statistics {
+        .container {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+    }
+}

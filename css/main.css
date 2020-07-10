@@ -376,4 +376,32 @@ body {
     margin-top: 40px;
   }
 }
+
+.statistics {
+  color: #fff;
+  padding: 100px 0 40px 0;
+}
+
+.statistics .container .content {
+  margin-bottom: 80px;
+}
+
+.statistics .container .content p:first-child {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 35px;
+}
+
+.statistics .container .content p:last-child {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+@media screen and (min-width: 992px) {
+  .statistics .container {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
 /*# sourceMappingURL=main.css.map */
