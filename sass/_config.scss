@@ -39,6 +39,11 @@ html {
         @content;
     }
 }
+@mixin media-md-bootstrap {
+    @media screen and (min-width: 992px){
+        @content;
+    }
+}
 @mixin media-lg {
     @media screen and (min-width: 1024px){
         @content;

@@ -125,4 +125,102 @@ html {
 }
 
 /* End Navbar */
+.banner {
+  height: 587px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 27, 47, 0.71)), to(rgba(27, 27, 47, 0.71))), url("../../img/banner.png") no-repeat;
+  background: linear-gradient(rgba(27, 27, 47, 0.71), rgba(27, 27, 47, 0.71)), url("../../img/banner.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #f4f4f4;
+  padding: 0 22px 64px 22px;
+}
+
+.banner-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.banner-content .main-content p {
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.banner-content .main-content p:first-child {
+  font-weight: bold;
+}
+
+.banner-content .main-content p:nth-last-child() {
+  font-size: 16px;
+}
+
+.banner-content .main-content h4 {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 44px;
+  /* identical to box height, or 110% */
+  text-transform: capitalize;
+}
+
+.banner-content .main-content h5 {
+  font-weight: bold;
+  margin-bottom: 20px !important;
+}
+
+.banner-content .main-content .devugo-btn {
+  width: 130px;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .banner {
+    height: 723px;
+    padding: 0 9% 0 9%;
+  }
+  .banner-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .banner-content .main-content {
+    max-width: 40%;
+  }
+  .banner-content .main-content p {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .banner-content .main-content p:first-child {
+    font-weight: bold;
+  }
+  .banner-content .main-content p:nth-last-child() {
+    font-size: 18px;
+  }
+  .banner-content .main-content h4 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 44px;
+    /* identical to box height, or 110% */
+    text-transform: capitalize;
+  }
+  .banner-content .main-content h5 {
+    font-weight: bold;
+    margin-bottom: 20px !important;
+  }
+}
 /*# sourceMappingURL=main.css.map */
