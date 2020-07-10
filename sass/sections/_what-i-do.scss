@@ -1,0 +1,42 @@
+.what-i-do {
+    .content{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        padding: 27px 10px 70px 20px;
+        @include transition-ease;
+        @include box-shadow;
+
+        &:hover {
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+        }
+        
+        .icon {
+            height: 100px;
+            width: 100px;
+            background: rgba(22, 36, 71, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+
+        .text {
+            h4 {
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 25px;
+                margin-top: 10px;
+                margin-bottom: 15px;
+                color: $title-text-color;
+            }
+            p{
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: 0.02em;
+            }
+        }
+    }
+}

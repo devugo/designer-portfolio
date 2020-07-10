@@ -15,6 +15,10 @@ html {
   font-family: 'poppins', sans-serif;
 }
 
+body {
+  background-color: #E5E5E5;
+}
+
 .devugo-btn {
   background: #EA3F5A;
   color: #fff;
@@ -36,6 +40,30 @@ html {
 
 .secondary-bg {
   background-color: #162447;
+}
+
+.section-title h3 {
+  color: #162447;
+  font-weight: bold;
+}
+
+.short-underline {
+  position: relative;
+}
+
+.short-underline::before {
+  content: '';
+  width: 73px;
+  height: 6px;
+  top: 40px;
+  left: 33%;
+  position: absolute;
+  background-color: #EA3F5A;
+}
+
+.devugo-section {
+  margin: 40px 0;
+  padding: 20px 0;
 }
 
 /* Start Navbar */
@@ -222,5 +250,61 @@ html {
     font-weight: bold;
     margin-bottom: 20px !important;
   }
+}
+
+.what-i-do .content {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  padding: 27px 10px 70px 20px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: 1px 2px 4px rgba(214, 217, 223, 0.5);
+          box-shadow: 1px 2px 4px rgba(214, 217, 223, 0.5);
+}
+
+.what-i-do .content:hover {
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+.what-i-do .content .icon {
+  height: 100px;
+  width: 100px;
+  background: rgba(22, 36, 71, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.what-i-do .content .text h4 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #162447;
+}
+
+.what-i-do .content .text p {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
 }
 /*# sourceMappingURL=main.css.map */

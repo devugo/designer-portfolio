@@ -19,3 +19,28 @@
 .secondary-bg {
     background-color: $secondary-color;
 }
+
+.section-title {
+    h3{
+        color: $title-text-color;
+        font-weight: bold;
+    }
+}
+.short-underline {
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 73px;
+        height: 6px;
+        top: 40px;
+        left: 33%;
+        position: absolute;
+        background-color: $primary-color;
+    }
+}
+
+.devugo-section {
+    margin: 40px 0;
+    padding: 20px 0;
+}
