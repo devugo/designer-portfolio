@@ -1,0 +1,20 @@
+.devugo-btn {
+    background: $primary-color;
+    color: $white;
+    border-radius: 4px;
+    font-size: 18px;
+    border: 1px solid $primary-color;
+    @include transition-ease;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.primary-bg {
+    background-color: $primary-color;
+}
+
+.secondary-bg {
+    background-color: $secondary-color;
+}
