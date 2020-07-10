@@ -69,6 +69,21 @@ body {
   padding: 20px 0;
 }
 
+input {
+  width: 100%;
+  border: 1px solid grey;
+  margin-bottom: 20px;
+  height: 50px;
+}
+
+input:hover, input:active, input:focus {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: 1.5px solid #162447;
+}
+
 /* Start Navbar */
 .navbar-light .navbar-toggler-icon {
   background-image: url("../../img/hamburger.png");
@@ -447,5 +462,115 @@ body {
   letter-spacing: 0.02em;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.brands {
+  color: #fff;
+}
+
+.brands .container {
+  padding: 20px 0 35px 0;
+}
+
+.brands .container .content h4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 35px;
+  margin-bottom: 30px;
+}
+
+.contact .container .content {
+  margin-top: 80px;
+}
+
+.contact .container .content .details .detail {
+  margin-bottom: 50px;
+}
+
+.contact .container .content .details .detail img {
+  width: 30px;
+}
+
+.contact .container .content .details .detail h4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.contact .container .content .details .detail p {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.contact .container .content .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.contact .container .content .social-icons .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .container .content .social-icons .icon:first-child {
+  background-color: #0057FF;
+}
+
+.contact .container .content .social-icons .icon:nth-child(2) {
+  background-color: #EA4C89;
+}
+
+.contact .container .content .social-icons .icon:last-child {
+  background-color: #1DA1F2;
+}
+
+.contact .container .content P {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 992px) {
+  .contact .container .content .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .contact .container .content .social-icons .icon {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  .contact .container .content form {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .contact .container .content form .btn {
+    float: right;
+  }
 }
 /*# sourceMappingURL=main.css.map */
