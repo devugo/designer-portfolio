@@ -1,5 +1,11 @@
 .contact{
     .container {
+        .short-underline {
+        
+            &::after {
+                transform:translateX(-110%);
+            }
+        }
         .content{
             margin-top: 80px;
 
@@ -15,11 +21,13 @@
                         font-size: 24px;
                         line-height: 36px;
                         margin-top: 15px;
-                        margin-bottom: 15px;
+                        margin-bottom: 40px;
                     }
                     p{
+                        font-weight: normal;
                         font-size: 18px;
                         line-height: 27px;
+                        margin-top: -15px;
                     }
                 }
                
@@ -38,6 +46,11 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    @include transition-ease;
+
+                    &:hover {
+                        filter: brightness(90%);
+                    }
 
                     &:first-child{
                         background-color: #0057FF;
@@ -81,6 +94,10 @@
                 line-height: 27px;
                 margin-top: 40px;
                 margin-bottom: 30px;
+            }
+
+            p.question {
+                margin-bottom: 40px;
             }
         }
     }

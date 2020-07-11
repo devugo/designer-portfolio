@@ -88,6 +88,12 @@ input:hover, input:active, input:focus {
   border: 1.5px solid #162447;
 }
 
+.devugo-card {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 15px;
+}
+
 /* Start Navbar */
 .navbar-light .navbar-toggler-icon {
   background-image: url("../../img/hamburger.png");
@@ -314,6 +320,11 @@ input:hover, input:active, input:focus {
   }
 }
 
+.what-i-do .short-underline::after {
+  -webkit-transform: translateX(-85%);
+          transform: translateX(-85%);
+}
+
 .what-i-do .content {
   margin-top: 30px;
   display: -webkit-box;
@@ -368,6 +379,11 @@ input:hover, input:active, input:focus {
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0.02em;
+}
+
+.about-me .container .short-underline::after {
+  -webkit-transform: translateX(-85%);
+          transform: translateX(-85%);
 }
 
 .about-me .container .content .image-content {
@@ -464,6 +480,11 @@ input:hover, input:active, input:focus {
   }
 }
 
+.portfolio .container .short-underline::after {
+  -webkit-transform: translateX(-135%);
+          transform: translateX(-135%);
+}
+
 .portfolio .container .content p {
   font-size: 16px;
   line-height: 22px;
@@ -513,7 +534,8 @@ input:hover, input:active, input:focus {
 }
 
 .brands .container {
-  padding: 20px 0 35px 0;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .brands .container .content h4 {
@@ -521,6 +543,17 @@ input:hover, input:active, input:focus {
   font-size: 24px;
   line-height: 35px;
   margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+.brands .container .content img {
+  max-width: 200px;
+  margin-bottom: 30px;
+}
+
+.contact .container .short-underline::after {
+  -webkit-transform: translateX(-110%);
+          transform: translateX(-110%);
 }
 
 .contact .container .content {
@@ -540,12 +573,14 @@ input:hover, input:active, input:focus {
   font-size: 24px;
   line-height: 36px;
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
 
 .contact .container .content .details .detail p {
+  font-weight: normal;
   font-size: 18px;
   line-height: 27px;
+  margin-top: -15px;
 }
 
 .contact .container .content .social-icons {
@@ -572,6 +607,13 @@ input:hover, input:active, input:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact .container .content .social-icons .icon:hover {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
 }
 
 .contact .container .content .social-icons .icon:first-child {
@@ -620,6 +662,10 @@ input:hover, input:active, input:focus {
   margin-bottom: 30px;
 }
 
+.contact .container .content p.question {
+  margin-bottom: 40px;
+}
+
 @media screen and (min-width: 992px) {
   .contact .container .content .social-icons {
     display: -webkit-box;
@@ -642,5 +688,74 @@ input:hover, input:active, input:focus {
   .contact .container .content form .btn-container {
     float: right;
   }
+}
+
+.testimonials .container .section-sub__title {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.testimonials .container .owl-carousel .devugo-card {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: 1px 2px 4px rgba(214, 217, 223, 0.5);
+          box-shadow: 1px 2px 4px rgba(214, 217, 223, 0.5);
+}
+
+.testimonials .container .owl-carousel .devugo-card:hover {
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+.testimonials .container .owl-carousel .devugo-card .content .img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.testimonials .container .owl-carousel .devugo-card .content .img img {
+  width: 72px;
+  height: 72px;
+}
+
+.testimonials .container .owl-carousel .devugo-card .content p {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  margin-top: -10px;
+}
+
+.testimonials .container .owl-carousel .devugo-card .content span {
+  color: #EA3F5A;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.testimonials .container .owl-carousel .devugo-card .content h5 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.owl-dot span {
+  background: white !important;
+  border: 1px solid #EA3F5A;
+}
+
+.owl-dot.active span {
+  background: #EA3F5A !important;
 }
 /*# sourceMappingURL=main.css.map */

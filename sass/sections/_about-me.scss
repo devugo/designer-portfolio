@@ -1,5 +1,11 @@
 .about-me {
     .container {
+        .short-underline {
+        
+            &::after {
+                transform:translateX(-85%);
+            }
+        }
         .content{
             // display: flex;
             // justify-content: center;

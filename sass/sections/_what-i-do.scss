@@ -1,4 +1,10 @@
 .what-i-do {
+    .short-underline {
+    
+        &::after {
+            transform:translateX(-85%);
+        }
+    }
     .content{
         margin-top: 30px;
         display: flex;

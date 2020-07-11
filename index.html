@@ -6,10 +6,19 @@
     <title>Debbs Design - Home</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
     <link href="css/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link href="css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+
+    <!-- <link rel="stylesheet" href="css/owl.carousel.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <!-- <script src="js/owl.carousel.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 </head>
 <body>
@@ -225,35 +234,50 @@
             <div class="section-sub__title">
                 <p>Hear what my clients says about me</p>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4">
-                    <div class="content" data-aos="zoom-in">
-                        <h4>Advance Your Skillset</h4>
-                        <p>Invest in yourself and your career by staying up
-                             to date on the latest trends in digital marketing,
-                              sales, customer support, and more.
-                        </p>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="devugo-card">
+                        <div class="content">
+                            <div class="img">
+                                <img src="img/testimonial1.png" />
+                            </div>
+                            <span class="float-left">"</span><br/>
+                            <p>Debby is a skilled designer who pt in efforts to produce great
+                                products. I recommend her for your projects.  <span>"</span>
+                            </p>
+                            <h5>Anthony B</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="content" data-aos="zoom-in">
-                        <h4>Start A Career in Any Field</h4>
-                        <p>Start a career path in any fied of 
-                            your choice. Get a nano-program. Programs
-                             include languaages, computer science and more.
-                        </p>
+                <div class="item">
+                    <div class="devugo-card">
+                        <div class="content">
+                            <div class="img">
+                                <img src="img/testimonial2.png" />
+                            </div>
+                            <span class="float-left">"</span><br/>
+                            <p>Debby is a skilled designer who pt in efforts to produce great
+                                products. I recommend her for your projects.  <span>"</span>
+                            </p>
+                            <h5>Lizzy J</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="content" data-aos="zoom-in">
-                        <h4>Get Valid Certification</h4>
-                        <p>Get Valid Certification to work in 
-                            silicon valley brands and agencies. The ceritificate
-                             are recognised in all countries worldwide.
-                        </p>
+                <div class="item">
+                    <div class="devugo-card">
+                        <div class="content">
+                            <div class="img">
+                                <img src="img/testimonial3.png" />
+                            </div>
+                            <span class="float-left">"</span><br/>
+                            <p>Debby is a skilled designer who pt in efforts to produce great
+                                products. I recommend her for your projects.  <span>"</span>
+                            </p>
+                            <h5>Daniel A</h5>
+                        </div>
                     </div>
                 </div>
-            </div>
+              </div>
         </div>
 
     </section>
@@ -263,10 +287,10 @@
             <div class="content">
                 <h4>Brands I've worked with</h4>
                 <div class="row">
-                    <!-- <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6">
                         <img src="img/fedex.png" data-aos="zoom-in" />
-                    </div> -->
-                    <!-- <div class="col-lg-3 col-md-6">
+                    </div>
+                    <div class="col-lg-3 col-md-6">
                         <img src="img/cisco.png" data-aos="zoom-in" />
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -274,7 +298,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <img src="img/piggyvest.png" data-aos="zoom-in" />
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -355,7 +379,6 @@
             </div>
         </footer>
     </section>
-    <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     
@@ -363,6 +386,27 @@
 
     <script>
         AOS.init();
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:30,
+                nav:true,
+                autoplay:true,
+                autoplayTimeout:5000,
+                autoplayHoverPause:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:2
+                    },
+                    1000:{
+                        items:3
+                    }
+                }
+            })
+        });
     </script>
 </body>
 </html>
