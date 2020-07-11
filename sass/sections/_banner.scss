@@ -1,9 +1,10 @@
 .banner {
     height: 587px;
-    background: linear-gradient(rgba(27, 27, 47, 0.71),rgba(27, 27, 47, 0.71)),url('../../img/banner.png') no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: linear-gradient(rgba(27, 27, 47, 0.71),rgba(27, 27, 47, 0.71)),url('../../img/banner.png') no-repeat center center/cover;
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
     color: $tertiary-text-color;
     padding: 0 22px 64px 22px;
 
@@ -15,30 +16,34 @@
         flex-direction: column-reverse;
 
         .main-content {
+            max-width: 95%;
             p{
-                font-size: 18px;
-                line-height: 36px;
-            }
-            p:first-child {
-                font-weight: bold;
+                font-weight: 500;
+                font-size: 12px;
             }
 
-            p:nth-last-child(){
+            h6{
+                font-weight: 300;
                 font-size: 16px;
+                line-height: 28px;
             }
 
             h4{
                 font-weight: bold;
-                font-size: 35px;
+                font-size: 32px;
                 line-height: 44px;
                 /* identical to box height, or 110% */
 
                 text-transform: capitalize;
+                margin-top: -20px;
             }
 
             h5{
                 font-weight: bold;
+                font-size: 18px;
+                line-height: 25px;
                 margin-bottom: 20px !important;
+                width: 80%;
             }
 
             .devugo-btn{
@@ -62,11 +67,12 @@
             flex-direction: row;
 
             .main-content {
-                max-width: 40%;
+                max-width: 70%;
 
                 p{
+                    font-weight: 500;
                     font-size: 24px;
-                    line-height: 36px;
+                    line-height: 44px;
                 }
                 p:first-child {
                     font-weight: bold;
@@ -80,15 +86,34 @@
                     font-weight: bold;
                     font-size: 40px;
                     line-height: 44px;
-                    /* identical to box height, or 110% */
     
                     text-transform: capitalize;
                 }
     
                 h5{
                     font-weight: bold;
-                    margin-bottom: 20px !important;
+                    font-size: 24px;
+                    line-height: 22px;
+                    margin-top: 15px;
+                    margin-bottom: 30px !important;
                 }    
+                h6{
+                    font-size: 24px;
+                    line-height: 36px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+@include media-lg {
+    .banner {
+
+        &-content {
+
+            .main-content {
+                max-width: 45%;
             }
         }
     }

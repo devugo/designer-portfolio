@@ -50,6 +50,31 @@
                     }
                 }
             }
+
+            form{
+                input{
+                    height: 59px;
+                    background-color: #f4f4f4;
+                    border: 1px solid rgba(27, 27, 47, 0.3);
+                    box-sizing: border-box;
+                    border-radius: 4px;
+
+                    &:hover, &:focus {
+                        border: 1px solid $secondary-color;
+                    }
+                }
+                textarea{
+                    height: 317px;
+                    background: #F4F4F4;
+                    border: 1px solid rgba(27, 27, 47, 0.3);
+                    box-sizing: border-box;
+                    border-radius: 4px;
+
+                    &:hover, &:focus {
+                        border: 1px solid $secondary-color;
+                    }
+                }
+            }
             P{
                 font-weight: 600;
                 font-size: 18px;
@@ -82,7 +107,7 @@
                     padding-left: 10%;
                     padding-right: 10%;
 
-                    .btn {
+                    .btn-container {
                         float: right;
                     }
                 }

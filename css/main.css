@@ -54,14 +54,18 @@ body {
   position: relative;
 }
 
-.short-underline::before {
-  content: '';
-  width: 73px;
-  height: 6px;
-  top: 40px;
-  left: 33%;
+.short-underline::after {
+  content: ' ';
   position: absolute;
-  background-color: #EA3F5A;
+  top: 100%;
+  left: 50%;
+  width: 73px;
+  border: 3px solid #EA3F5A;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 .devugo-section {
@@ -171,13 +175,33 @@ input:hover, input:active, input:focus {
 }
 
 /* End Navbar */
+.footer {
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: white;
+  height: 73px;
+}
+
+.footer footer {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .banner {
   height: 587px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 27, 47, 0.71)), to(rgba(27, 27, 47, 0.71))), url("../../img/banner.png") no-repeat;
-  background: linear-gradient(rgba(27, 27, 47, 0.71), rgba(27, 27, 47, 0.71)), url("../../img/banner.png") no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 27, 47, 0.71)), to(rgba(27, 27, 47, 0.71))), url("../../img/banner.png") no-repeat center center/cover;
+  background: linear-gradient(rgba(27, 27, 47, 0.71), rgba(27, 27, 47, 0.71)), url("../../img/banner.png") no-repeat center center/cover;
   color: #f4f4f4;
   padding: 0 22px 64px 22px;
 }
@@ -194,30 +218,36 @@ input:hover, input:active, input:focus {
           flex-direction: column-reverse;
 }
 
+.banner-content .main-content {
+  max-width: 95%;
+}
+
 .banner-content .main-content p {
-  font-size: 18px;
-  line-height: 36px;
+  font-weight: 500;
+  font-size: 12px;
 }
 
-.banner-content .main-content p:first-child {
-  font-weight: bold;
-}
-
-.banner-content .main-content p:nth-last-child() {
+.banner-content .main-content h6 {
+  font-weight: 300;
   font-size: 16px;
+  line-height: 28px;
 }
 
 .banner-content .main-content h4 {
   font-weight: bold;
-  font-size: 35px;
+  font-size: 32px;
   line-height: 44px;
   /* identical to box height, or 110% */
   text-transform: capitalize;
+  margin-top: -20px;
 }
 
 .banner-content .main-content h5 {
   font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
   margin-bottom: 20px !important;
+  width: 80%;
 }
 
 .banner-content .main-content .devugo-btn {
@@ -245,11 +275,12 @@ input:hover, input:active, input:focus {
             flex-direction: row;
   }
   .banner-content .main-content {
-    max-width: 40%;
+    max-width: 70%;
   }
   .banner-content .main-content p {
+    font-weight: 500;
     font-size: 24px;
-    line-height: 36px;
+    line-height: 44px;
   }
   .banner-content .main-content p:first-child {
     font-weight: bold;
@@ -261,12 +292,25 @@ input:hover, input:active, input:focus {
     font-weight: bold;
     font-size: 40px;
     line-height: 44px;
-    /* identical to box height, or 110% */
     text-transform: capitalize;
   }
   .banner-content .main-content h5 {
     font-weight: bold;
-    margin-bottom: 20px !important;
+    font-size: 24px;
+    line-height: 22px;
+    margin-top: 15px;
+    margin-bottom: 30px !important;
+  }
+  .banner-content .main-content h6 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .banner-content .main-content {
+    max-width: 45%;
   }
 }
 
@@ -542,6 +586,32 @@ input:hover, input:active, input:focus {
   background-color: #1DA1F2;
 }
 
+.contact .container .content form input {
+  height: 59px;
+  background-color: #f4f4f4;
+  border: 1px solid rgba(27, 27, 47, 0.3);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.contact .container .content form input:hover, .contact .container .content form input:focus {
+  border: 1px solid #162447;
+}
+
+.contact .container .content form textarea {
+  height: 317px;
+  background: #F4F4F4;
+  border: 1px solid rgba(27, 27, 47, 0.3);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.contact .container .content form textarea:hover, .contact .container .content form textarea:focus {
+  border: 1px solid #162447;
+}
+
 .contact .container .content P {
   font-weight: 600;
   font-size: 18px;
@@ -569,7 +639,7 @@ input:hover, input:active, input:focus {
     padding-left: 10%;
     padding-right: 10%;
   }
-  .contact .container .content form .btn {
+  .contact .container .content form .btn-container {
     float: right;
   }
 }
