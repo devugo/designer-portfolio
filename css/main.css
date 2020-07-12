@@ -202,8 +202,8 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
 .banner {
   height: 587px;
   background-attachment: fixed;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 27, 47, 0.71)), to(rgba(27, 27, 47, 0.71))), url("../../img/banner.png") no-repeat center center/cover;
-  background: linear-gradient(rgba(27, 27, 47, 0.71), rgba(27, 27, 47, 0.71)), url("../../img/banner.png") no-repeat center center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 27, 47, 0.71)), to(rgba(27, 27, 47, 0.71))), url("../../img/banner_localized.png") no-repeat center center/cover;
+  background: linear-gradient(rgba(27, 27, 47, 0.71), rgba(27, 27, 47, 0.71)), url("../../img/banner_localized.png") no-repeat center center/cover;
   color: #f4f4f4;
   padding: 0 22px 64px 22px;
 }
@@ -722,6 +722,7 @@ input:hover, input:active, input:focus, textarea:hover, textarea:active, textare
 .testimonials .container .owl-carousel .devugo-card .content .img img {
   width: 72px;
   height: 72px;
+  border-radius: 50%;
 }
 
 .testimonials .container .owl-carousel .devugo-card .content p {
