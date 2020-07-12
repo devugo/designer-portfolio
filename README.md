@@ -1,8 +1,7 @@
 Designer Portfolio
 ==================
 
-A single page portfolio website suitable for every designer out there. Esay to customize, fast loading speed, optimized etc.
-Render this components to manage pagiantions betweeen data
+A single page portfolio website suitable for every designer out there. Easy to customize, fast loading speed, optimized etc.
 
 ### Live URL
 
